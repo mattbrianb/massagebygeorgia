@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import heroImage from "src/assets/images/main.png"
+import heroImage from "../assets/images/main.png";
 
 export default function Hero() {
   return (
