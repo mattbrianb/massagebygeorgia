@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="src/assets/images/main.png"
+          src={heroImage}
           alt="Spa room"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
