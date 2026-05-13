@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TAILWIND_DISABLE_OXIDE: "1"
     steps:
       - uses: actions/checkout@v4
 
