@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
-@import "tailwindcss";
 
-@theme {
+/* ✅ Tailwind v3 directives (REQUIRED) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Theme variables (replace @theme with :root) */
+:root {
   --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  
+
   --color-olive-50: #f4f4f1;
   --color-olive-100: #e8e8e1;
   --color-olive-200: #d0d0c3;
@@ -23,19 +28,20 @@
   --color-sand-400: #dfd4c5;
   --color-sand-500: #d5c8b5;
   --color-sand-600: #c2b29d;
-  
+
   --color-ink-900: #2d2a26;
   --color-ink-800: #4a453f;
   --color-ink-700: #665f57;
 }
 
+/* ✅ Base layer styles (this part was already correct) */
 @layer base {
   body {
     background-color: var(--color-sand-50);
     color: var(--color-ink-900);
     font-family: var(--font-sans);
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
   }
