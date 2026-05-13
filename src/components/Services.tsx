@@ -5,24 +5,24 @@ const services = [
     id: 'stress-release',
     title: 'Stress Release Massage',
     benefit: 'Melt away tension and calm your nervous system.',
-    durations: '60 mins | 90 mins',
-    price: 'From £60',
+    durations: '30 mins | 60 mins | 90 mins',
+    price: 'From R250',
     description: 'A flowing, restorative treatment using medium pressure to quiet the mind and release surface tension. Perfect for general stress relief and promoting deep sleep.'
   },
   {
     id: 'deep-tissue',
     title: 'Deep Tissue Massage',
     benefit: 'Targeted relief for chronic pain and stiffness.',
-    durations: '60 mins | 90 mins',
-    price: 'From £70',
+    durations: '30 mins | 60 mins | 90 mins',
+    price: 'From R250',
     description: 'Focused firm pressure to reach deeper layers of muscle and fascia. Ideal for athletes, desk workers, or anyone with persistent knots and restricted movement.'
   },
   {
     id: 'custom-recovery',
-    title: 'Custom Recovery Session',
+    title: 'Manual Lymph Drainage Massage',
     benefit: 'A tailored blend of techniques for your specific needs.',
-    durations: '75 mins',
-    price: '£85',
+    durations: '30 mins | 60 mins | 90 mins',
+    price: 'From R250',
     description: 'We will assess your body and create a unique session blending deep tissue, relaxation, and mobilisations to address your specific pain points.'
   }
 ];
