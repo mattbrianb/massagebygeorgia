@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import aboutImage from "../assets/images/georgia.jpg"
+import aboutImage from "../assets/images/georgia.jpg";
 
 export default function About() {
   return (
