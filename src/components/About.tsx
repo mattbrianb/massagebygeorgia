@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import aboutImage from "../assets/images/georgia.jpg"
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] max-w-sm mx-auto lg:mx-0 relative z-10">
               <img
-                src="https://picsum.photos/seed/portrait/800/1066"
+                src={aboutImage}
                 alt="Georgia - Massage Therapist"
                 className="w-full h-full object-cover rounded-t-full bg-sand-300 shadow-xl shadow-olive-900/5"
                 referrerPolicy="no-referrer"
