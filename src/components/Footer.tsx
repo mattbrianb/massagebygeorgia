@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex flex-wrap gap-12 mb-8 md:mb-0">
         <div className="flex flex-col">
           <span className="text-[10px] uppercase tracking-widest opacity-50 mb-1">Location</span>
-          <span className="text-xs font-semibold">Boutique Studio, London</span>
+          <span className="text-xs font-semibold">Hillcrest, Durban</span>
         </div>
         <div className="flex flex-col">
           <span className="text-[10px] uppercase tracking-widest opacity-50 mb-1">Credentials</span>
