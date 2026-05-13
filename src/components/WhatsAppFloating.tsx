@@ -13,7 +13,7 @@ export default function WhatsAppFloating() {
     });
   }, [scrollY]);
 
-  const whatsappNumber = "447000000000"; // Replace with actual number
+  const whatsappNumber = "+27794808977"; // Replace with actual number
   const message = encodeURIComponent("Hi Georgia, I'd like to book a massage.\nService: \nPreferred day/time: ");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
