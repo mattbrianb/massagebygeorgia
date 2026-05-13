@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import heroImage from "src/assets/images/main.png"
 
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://picsum.photos/seed/spa/1920/1080?blur=2"
+          src="src/assets/images/main.png"
           alt="Spa room"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
