@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { MapPin, MessageCircle, Clock, CalendarCheck } from 'lucide-react';
 
 export default function Booking() {
-  const whatsappNumber = "447000000000"; // Replace with actual number
+  const whatsappNumber = "27794808977"; // Replace with actual number
   const message = encodeURIComponent("Hi Georgia, I'd like to book a massage.\nService: \nPreferred day/time: ");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -82,8 +82,8 @@ export default function Booking() {
                       <MapPin size={18} /> Location
                     </h4>
                     <p className="text-sm font-light leading-relaxed">
-                      123 Wellness Way,<br/>
-                      London, SW1A 1AA<br/>
+                      Shop 2, Imbabala Park,<br/>
+                      33 Macfarlane Drive, Durban, KZN<br/>
                       <span className="text-xs mt-2 block opacity-70">Private setting, exact details provided upon booking confirmation.</span>
                     </p>
                   </div>
@@ -92,9 +92,9 @@ export default function Booking() {
                       <Clock size={18} /> Hours
                     </h4>
                     <ul className="text-sm flex flex-col gap-1 font-light">
-                      <li className="flex justify-between"><span>Mon - Fri:</span> <span>10am - 7pm</span></li>
-                      <li className="flex justify-between"><span>Saturday:</span> <span>9am - 3pm</span></li>
-                      <li className="flex justify-between opacity-50"><span>Sunday:</span> <span>Closed</span></li>
+                      <li className="flex justify-between"><span>Mon - Fri:</span> <span>9am - 7pm</span></li>
+                      <li className="flex justify-between"><span>Saturday:</span> <span>9am - 5pm</span></li>
+                      <li className="flex justify-between opacity-50"><span>Sunday:</span> <span>Based on booking</span></li>
                     </ul>
                   </div>
                 </div>
