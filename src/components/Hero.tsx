@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import heroImage from "../assets/images/main.png";
+import flourish from "../assets/images/flourish.png";
 
 export default function Hero() {
   return (
@@ -25,17 +26,25 @@ export default function Hero() {
             className="flex flex-col gap-6"
           >
             <div className="flex flex-col">
-              <span className="text-xs uppercase tracking-[0.3em] font-semibold text-olive-700 mb-2 block">
-                Massage by Georgia
-              </span>
-              <h1 className="text-6xl font-serif leading-[1.1] mb-4 text-ink-900">
-                Professional therapeutic <br className="hidden md:block"/>
-                <span className="italic">massage therapy.</span>
+              <img
+                src={flourish}
+                alt=""
+                aria-hidden="true"
+                className="w-40 md:w-52 h-auto mb-6 opacity-90"
+              />
+
+              <h1 className="text-6xl md:text-7xl font-serif leading-[1.05] mb-6 text-ink-900">
+                Massage <span className="italic font-normal">by</span><br />
+                Georgia
               </h1>
-              <p className="text-sm leading-relaxed text-ink-900 opacity-80 max-w-sm mb-8">
-                Relaxation, recovery, and pain relief — personalised to your body and your needs in a calm, private setting.
+
+              <p className="text-base leading-relaxed text-ink-900 opacity-80 mb-1">
+                Specialised massage therapy
               </p>
-              
+              <p className="text-sm uppercase tracking-[0.2em] font-semibold text-olive-700 mb-8">
+                Recovery. Rehabilitation. Relaxation.
+              </p>
+
               <div className="flex items-center gap-6">
                 <a
                   href="#booking"
@@ -50,27 +59,6 @@ export default function Hero() {
                   View Services
                 </a>
               </div>
-            </div>
-          </motion.div>
-
-          {/* Micro-trust signals */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 flex flex-wrap gap-8 text-sm text-ink-700"
-          >
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-olive-500"></span>
-              Qualified Therapist
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-olive-500"></span>
-              By Appointment Only
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-olive-500"></span>
-              Private & Professional
             </div>
           </motion.div>
         </div>
