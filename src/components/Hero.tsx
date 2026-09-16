@@ -52,7 +52,7 @@ export default function Hero() {
                   href="#services"
                   className="px-8 py-4 text-xs uppercase tracking-widest font-bold text-olive-700 hover:opacity-70 transition-opacity"
                 >
-                  View Services
+                  View Treatments
                 </a>
               </div>
             </div>
