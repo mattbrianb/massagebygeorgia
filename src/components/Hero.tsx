@@ -30,18 +30,14 @@ export default function Hero() {
                 src={flourish}
                 alt=""
                 aria-hidden="true"
-                className="w-40 md:w-52 h-auto mb-6 opacity-90"
+                className="w-48 md:w-64 h-auto mb-8 opacity-90"
               />
 
-              <h1 className="text-6xl md:text-7xl font-serif leading-[1.4] mb-6 text-ink-900">
-                Massage <span className="italic font-normal">by</span><br />
-                Georgia
+              <h1 className="text-4xl md:text-5xl font-serif leading-[1.35] mb-5 text-ink-900">
+                Specialised <span className="italic">massage therapy</span>
               </h1>
 
-              <p className="text-base leading-relaxed text-ink-900 opacity-80 mb-1">
-                Specialised massage therapy
-              </p>
-              <p className="text-sm uppercase tracking-[0.2em] font-semibold text-olive-700 mb-8">
+              <p className="text-sm uppercase tracking-[0.2em] font-semibold text-olive-700 mb-10">
                 Recovery. Rehabilitation. Relaxation.
               </p>
 
