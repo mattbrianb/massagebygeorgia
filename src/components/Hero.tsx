@@ -33,7 +33,7 @@ export default function Hero() {
                 className="w-40 md:w-52 h-auto mb-6 opacity-90"
               />
 
-              <h1 className="text-6xl md:text-7xl font-serif leading-[1.05] mb-6 text-ink-900">
+              <h1 className="text-6xl md:text-7xl font-serif leading-[1.18] mb-6 text-ink-900">
                 Massage <span className="italic font-normal">by</span><br />
                 Georgia
               </h1>

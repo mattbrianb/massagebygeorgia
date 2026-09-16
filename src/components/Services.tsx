@@ -43,7 +43,7 @@ export default function Services() {
           <span className="text-xs uppercase tracking-[0.3em] font-semibold text-olive-700 mb-2 block">
             Treatments
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-ink-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif leading-[1.22] text-ink-900 mb-6">
             Choose your <span className="italic">treatment</span>
           </h2>
           <p className="text-sm leading-relaxed text-ink-900 opacity-80 max-w-2xl mx-auto">

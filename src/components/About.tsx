@@ -35,7 +35,7 @@ export default function About() {
             <span className="text-xs uppercase tracking-[0.3em] font-semibold text-olive-700 mb-2 block">
               About Georgia
             </span>
-            <h2 className="text-5xl font-serif text-ink-900 mb-6">
+            <h2 className="text-5xl font-serif leading-[1.22] text-ink-900 mb-6">
               Expert care in a <br/>
               <span className="italic">safe, respectful space.</span>
             </h2>
@@ -45,7 +45,7 @@ export default function About() {
                 My name is Georgia Acton, I&rsquo;m 28 years old. In 2019, I graduated from Isa Carstens Academy in Stellenbosch, with an international diploma in Somatology. In 2021, I set out on a global adventure, spending the past four and a half years working on five of Royal Caribbean&rsquo;s largest cruise liners.
               </p>
               <p>
-                During that time, I worked with OneSpaWorld &mdash; the global leaders in the health and wellness industry, both on land and at sea. This invaluable journey enabled me to connect with thousands of people, refining my expertise in what I love most &mdash; working with the body.
+                During that time, I worked with OneSpaWorld, the global leaders in the health and wellness industry, both on land and at sea. This invaluable journey enabled me to connect with thousands of people, refining my expertise in what I love most, working with the body.
               </p>
               <p>
                 Now that I&rsquo;ve returned home, I couldn&rsquo;t be more excited to invite you into the calming space I&rsquo;ve created. Whether you&rsquo;re seeking pure relaxation or relief from long-held pain, I&rsquo;m here to help. Without further ado, welcome to the place I&rsquo;ve designed just for you.
@@ -58,7 +58,7 @@ export default function About() {
                 <ul className="text-xs text-ink-900 opacity-70 space-y-1.5 leading-relaxed">
                   <li>3 year international diploma in Somatology.</li>
                   <li>4.5 years onboard Royal Caribbean cruise lines.</li>
-                  <li>Working for OneSpaWorld &mdash; global leaders in the health and wellness industry, on land and at sea.</li>
+                  <li>Working for OneSpaWorld, global leaders in the health and wellness industry, on land and at sea.</li>
                 </ul>
               </div>
               <div className="border-l-2 border-olive-700 pl-4">

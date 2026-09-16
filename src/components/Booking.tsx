@@ -15,11 +15,11 @@ export default function Booking() {
             <span className="text-xs uppercase tracking-[0.3em] font-semibold text-olive-700 mb-2 block">
               Book Your Session
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif text-ink-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif leading-[1.22] text-ink-900 mb-6">
               Ready to <span className="italic">relax?</span>
             </h2>
             <p className="text-sm leading-relaxed opacity-80 max-w-2xl mx-auto">
-              Booking is simple and direct. No endless forms or account creation—just send a message to check availability and secure your time.
+              Booking is simple and direct. No endless forms or account creation. Just send a message to check availability and secure your time.
             </p>
           </div>
 
