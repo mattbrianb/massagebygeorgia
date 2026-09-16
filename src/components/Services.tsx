@@ -51,7 +51,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-x-8 gap-y-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -59,7 +59,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="border-l-2 border-olive-700 pl-8 py-4 flex flex-col h-full hover:bg-sand-100 transition-colors"
+              className="border-l-2 border-olive-700 pl-8 pr-8 py-6 flex flex-col h-full hover:bg-sand-100 transition-colors"
             >
               <div className="mb-6 flex-grow">
                 <h3 className="font-serif text-2xl italic mb-3 text-ink-900">{service.title}</h3>
