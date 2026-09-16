@@ -35,7 +35,7 @@ export default function About() {
             <span className="text-xs uppercase tracking-[0.3em] font-semibold text-olive-700 mb-2 block">
               About Georgia
             </span>
-            <h2 className="text-5xl font-serif leading-[1.22] text-ink-900 mb-6">
+            <h2 className="text-5xl font-serif leading-[1.35] text-ink-900 mb-6">
               Expert care in a <br/>
               <span className="italic">safe, respectful space.</span>
             </h2>
