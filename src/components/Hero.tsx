@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import heroImage from "../assets/images/main.png";
+import heroImage from "../assets/images/main.webp";
 import flourish from "../assets/images/flourish.png";
 
 export default function Hero() {
