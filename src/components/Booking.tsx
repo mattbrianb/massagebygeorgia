@@ -70,9 +70,9 @@ export default function Booking() {
                   href={whatsappUrl} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 w-full bg-sand-50 text-olive-900 py-4 px-8 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-sand-200 transition-colors mb-8 shadow-lg shadow-black/10"
+                  className="flex items-center justify-center gap-4 w-full bg-sand-50 text-olive-900 py-6 px-8 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-sand-200 transition-colors mb-8 shadow-lg shadow-black/10"
                 >
-                  <MessageCircle size={20} />
+                  <MessageCircle size={28} />
                   Book via WhatsApp
                 </a>
 

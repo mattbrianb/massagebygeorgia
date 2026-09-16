@@ -1,29 +1,37 @@
 import { motion } from 'motion/react';
 
+const standardPricing = [
+  { duration: '30 mins', price: 'R300' },
+  { duration: '60 mins', price: 'R550' },
+  { duration: '90 mins', price: 'R750' }
+];
+
 const services = [
   {
-    id: 'stress-release',
-    title: 'Stress Release Massage',
-    benefit: 'Melt away tension and calm your nervous system.',
-    durations: '30 mins | 60 mins | 90 mins',
-    price: 'From R250',
-    description: 'A flowing, restorative treatment using medium pressure to quiet the mind and release surface tension. Perfect for general stress relief and promoting deep sleep.'
+    id: 'sports',
+    title: 'Sports Massage',
+    pricing: standardPricing,
+    description: 'Sports massage is a targeted treatment designed to relieve muscle tension, improve mobility, speed up recovery, and enhance performance, whether you’re training hard, recovering from injury, or simply feeling tight and overworked.'
   },
   {
     id: 'deep-tissue',
     title: 'Deep Tissue Massage',
-    benefit: 'Targeted relief for chronic pain and stiffness.',
-    durations: '30 mins | 60 mins | 90 mins',
-    price: 'From R250',
-    description: 'Focused firm pressure to reach deeper layers of muscle and fascia. Ideal for athletes, desk workers, or anyone with persistent knots and restricted movement.'
+    pricing: standardPricing,
+    description: 'A therapeutic treatment, releasing chronic pain and restoring mobility to the body. Slow, firm and targeted techniques, eliminating the build up of lactic acid.'
   },
   {
-    id: 'custom-recovery',
+    id: 'stress-release',
+    title: 'Stress Release Massage',
+    pricing: standardPricing,
+    description: 'A deeply soothing treatment designed for both mind and body. Improving the circulation, reducing tension and calming the nervous system. Shifting the body from a state of stress to relaxation.'
+  },
+  {
+    id: 'lymph-drainage',
     title: 'Manual Lymph Drainage Massage',
-    benefit: 'A tailored blend of techniques for your specific needs.',
-    durations: '30 mins | 60 mins | 90 mins',
-    price: 'From R250',
-    description: 'We will assess your body and create a unique session blending deep tissue, relaxation, and mobilisations to address your specific pain points.'
+    pricing: [
+      { duration: '60 mins', price: 'R550' }
+    ],
+    description: 'This slow, light, specialized technique, uses rhythmic strokes to stimulate the lymph lying just under the skin. Reducing fluid buildup and removing metabolic waste from the body.'
   }
 ];
 
@@ -43,7 +51,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -54,19 +62,25 @@ export default function Services() {
               className="border-l-2 border-olive-700 pl-8 py-4 flex flex-col h-full hover:bg-sand-100 transition-colors"
             >
               <div className="mb-6 flex-grow">
-                <h3 className="font-serif text-2xl italic mb-2 text-ink-900">{service.title}</h3>
-                <p className="text-sm opacity-80 mb-4">{service.benefit}</p>
-                <p className="text-xs font-medium text-ink-900 opacity-60 leading-relaxed mb-4">
+                <h3 className="font-serif text-2xl italic mb-3 text-ink-900">{service.title}</h3>
+                <p className="text-sm text-ink-900 opacity-80 leading-relaxed">
                   {service.description}
                 </p>
               </div>
-              
+
               <div className="mt-auto">
-                <div className="flex justify-between items-end mb-6 text-ink-900 text-xs uppercase tracking-widest font-semibold opacity-70">
-                  <div>{service.durations}</div>
-                  <div>{service.price}</div>
+                <div className="mb-6 pt-5 border-t border-sand-300 flex flex-col gap-2">
+                  {service.pricing.map((tier) => (
+                    <div
+                      key={tier.duration}
+                      className="flex justify-between items-baseline text-ink-900 text-xs uppercase tracking-widest font-semibold opacity-70"
+                    >
+                      <span>{tier.duration}</span>
+                      <span>{tier.price}</span>
+                    </div>
+                  ))}
                 </div>
-                
+
                 <a
                   href={`#booking`}
                   className="inline-block border-b border-olive-700 text-olive-700 text-xs uppercase tracking-widest font-bold pb-1 hover:opacity-70 transition-opacity"
