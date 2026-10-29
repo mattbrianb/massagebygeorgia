@@ -1,6 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { motion, useScroll } from 'motion/react';
 import { useEffect, useState } from 'react';
+import { trackWhatsAppClick } from '../analytics';
 
 export default function WhatsAppFloating() {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,6 +23,7 @@ export default function WhatsAppFloating() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick('floating_button')}
       initial={{ opacity: 0, scale: 0.8, y: 20 }}
       animate={{ 
         opacity: isVisible ? 1 : 0, 

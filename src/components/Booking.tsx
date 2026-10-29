@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { MapPin, MessageCircle, Clock, CalendarCheck } from 'lucide-react';
+import { trackWhatsAppClick } from '../analytics';
 
 export default function Booking() {
   const whatsappNumber = "27794808977"; // Replace with actual number
@@ -70,6 +71,7 @@ export default function Booking() {
                   href={whatsappUrl} 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick('booking_card')}
                   className="flex items-center justify-center gap-4 w-full bg-sand-50 text-olive-900 py-6 px-8 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-sand-200 transition-colors mb-8 shadow-lg shadow-black/10"
                 >
                   <MessageCircle size={28} />
